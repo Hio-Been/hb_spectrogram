@@ -51,9 +51,6 @@ disp([ '.. nTrials = ' num2str(nTrials ) ])
 disp([ '... winSize = ' num2str( nfft/EEG.srate ) ' sec']);
 disp([ '.... tResolution = ' num2str( t_resolution ) ' sec'])
 
-nTrials = 30;
-
-
 switch(option)
     
     case('ePSD') %% Event-related PSD
