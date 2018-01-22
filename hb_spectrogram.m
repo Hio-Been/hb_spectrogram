@@ -1,10 +1,11 @@
 function EEG = hb_spectrogram( EEG, option, chan_list, win_size, t_resolution )
 %% Calculating spectrogram from EEG dataset
+% optimized to EEGLAB data format
 %
-% paramIn) EEG=hb_spectrogram( EEG, calc_option, chan_list, win_size, t_resolution )
-% example) EEG=hb_spectrogram( EEG,    'ePSD',    [1 2 3],     2^9,      0.1 )
+% paramIn)       hb_spectrogram( EEG, calc_option, chan_list, win_size, t_resolution )
+% example) EEG = hb_spectrogram( EEG,    'ePSD',    [1 2 3],     2^9,      0.1 )
 %
-% -- Possible calc_option --
+% -- Possible option for calc --
 % ePSD : event-related Power (amplitude) Spectral Density
 % ePLF : event-related Phase Locking Factor
 % eCOH : event-related spectral Coherence
